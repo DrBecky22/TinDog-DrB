@@ -40,6 +40,7 @@ h3 {
 
 p {
     color: darkgrey
+    line-height: .5em;
 }
 
 .container-fluid {
@@ -55,7 +56,19 @@ p {
     transform: rotate(15deg);
     padding-bottom: 3em;
     padding-left: 4em;
+    position: relative;
     /* z-index: -5; */
+}
+
+@media (max-width: 1028px) {
+    #iphone-img {
+        position: static;
+        transform: none;
+    }
+
+    #title {
+        text-align: center;
+    }
 }
 
 .title-section {
@@ -65,6 +78,9 @@ p {
 /* Feature Section */
 #features {
 padding: 5% 0; 
+background-color: whitesmoke;
+position: relative;
+z-index: 1;
 }
 
 .feature-cards {
@@ -85,7 +101,6 @@ padding: 5% 0;
     background-color: tomato;
     text-align: center;
     color: white;
-
 }
 
 .testimonial-image {
@@ -119,6 +134,11 @@ padding: 5% 0;
     padding-top: 5%;
     padding-bottom: 5%;
     text-align: center;
+    
+}
+
+.card {
+    margin-bottom: 20px;
     box-shadow: 5px 5px 10px;
 }
 
@@ -127,8 +147,28 @@ padding: 5% 0;
     background-color: firebrick;
     padding-top: 5%;
     padding-bottom: 5%;
+    text-align: center;
 }
+
+#closing-words {
+    padding: 1.5em;
+    color: whitesmoke;
+    line-height: 1.5em;
+    font-weight: 800;
+    font-size: 3em;
+}
+
+.cta-button {
+    margin: 15px;
+}
+
 /* Footer */
 #footer {
     background-color: whitesmoke;
+    text-align: center;
+    padding: 10%;
+}
+
+.footer-icons {
+    padding: .5em;
 }
